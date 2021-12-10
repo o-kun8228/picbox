@@ -33,6 +33,15 @@
   text-decoration: none;
 }
 
+.create-room a:hover {
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+
 
 .rooms {
   background-color: #2F3E51;
@@ -48,9 +57,18 @@
 .room-name a {
   text-decoration: none;
   color: white;
+  transition-timing-function: ease;
+  transition-duration: 0.1s;
 }
 
+.room-name a:hover {
+  text-decoration: none;
+  color: white;
+  transition-timing-function: ease;
+  transition-duration: 0.1s;
+  background-color: rgba(255, 255, 255, 0.2);
 
+}
 
 .chat {
   background-color: #FFFFFF;
@@ -79,6 +97,17 @@
   border: 1px solid darkred;
   color: darkred;
   padding: 20px;
+  transition-timing-function: ease;
+  transition-duration: 0.1s;
+}
+
+.header-button a:hover {
+  text-decoration: none;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 20px;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
 }
 
 
@@ -92,6 +121,9 @@
 
 
 .message {
+  overflow: hidden;
+  background-size: 5% auto;
+  display: inline-block;
   margin: 10px 0 0 0;
 }
 
@@ -143,6 +175,7 @@
 }
 
 .form-submit {
+  width: 80px;
   background-color: #38AEF0;
   border: none;
   color: white;
@@ -150,7 +183,27 @@
   height: 50px;
   margin-left: 15px;
   padding: 0 20px;
+  transition-property:width;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+  
 }
+
+.form-submit:hover {
+  width: 150px;
+  background-color: #FF9300;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+  transition-property:width;
+  transition-duration: 1.0s;
+  transition-timing-function: ease;
+}
+
+
 
 .form-image {
   font-size: 12px;
